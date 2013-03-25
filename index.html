@@ -1,0 +1,258 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta content="text/html; charset=iso-8859-1" http-equiv="Content-Type"/>
+
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.3/jquery.min.js"></script>
+<script type="text/javascript" src="jquery.scrolling-parallax.js"></script>
+
+<style type="text/css">
+
+body {
+    background: url(images/bg.jpg)
+}
+
+#content {
+	height: 5000px;
+    min-height: 5000px;
+	width: 960px;
+    text-align: center;
+    position: relative;
+	margin-left: -480px;
+	left: 50%;
+	
+}
+
+#space_text{position: absolute; background: #fff; border: 1px solid #036; opacity: .5; z-index: 10;width: 400px; margin-left: -400px; left: 50%; margin-top: 100px; text-align: center; color: #0CF}
+#space_text h1{opacity: 1}
+
+#heaven_text{position: absolute; background: #fff; border: 1px solid #036; opacity: .5; z-index: 10;width: 400px; margin-left: -200px; left: 50%; margin-top: 1000px; text-align: center; color: #0CF}
+#heave_text h1{opacity: 1}
+
+#sky_text{position: absolute; background: #fff; border: 1px solid #036; opacity: .5; z-index: 10;width: 400px; margin-left: -300px; left: 50%; margin-top: 1700px; text-align: center; color: #0CF}
+#sky_text h1{opacity: 1}
+
+#sunset_text{position: absolute; background: #fff; border: 1px solid #036; opacity: .5; z-index: 10;width: 400px; margin-left: -300px; left: 50%; margin-top: 2500px; text-align: center; color: #0CF}
+#sunset_text h1{opacity: 1}
+
+#dino_text{position: absolute; background: #fff; border: 1px solid #036; opacity: .5; z-index: 10;width: 400px; margin-left: -200px; left: 50%; margin-top: 3480px; text-align: center; color: #0CF}
+#dino_text h1{opacity: 1}
+
+#hell_text{position: absolute; background: #fff; border: 1px solid #036; opacity: .5; z-index: 10;width: 400px; margin-left: -200px; left: 50%; margin-top: 4300px; text-align: center; color: #0CF}
+#hell_text h1{opacity: 1}
+
+#mountain{width: 1920px; height: 800px; background: url(images/mountain.png) center no-repeat;  position: absolute; margin-top: 2723px; z-index: 7; margin-left: -960px; left: 50%}
+
+</style>
+<script>
+$(document).ready(function(){
+	$('#space_text').hide().delay(1000).fadeIn(1000);
+	$('#heaven_text').hide();
+	$('#sky_text').hide();
+	$('#sunset_text').hide();
+	$('#dino_text').hide();
+	$('#hell_text').hide();
+	});
+$(window).scroll(function () {
+		if ($(this).scrollTop() > 400) {
+			$('#space_text').fadeIn();
+		}
+		if ($(this).scrollTop() > 600) {
+			$('#heaven_text').fadeIn();
+		} 
+		else {
+			$('#heaven_text').fadeOut();
+		}
+		if ($(this).scrollTop() > 1300) {
+			$('#sky_text').fadeIn();
+		} 
+		else {
+			$('#sky_text').fadeOut();
+		} 
+		
+		if ($(this).scrollTop() > 2000) {
+			$('#sunset_text').fadeIn();
+		} 
+		else {
+			$('#sunset_text').fadeOut();
+		} 
+		
+		if ($(this).scrollTop() > 3000) {
+			$('#dino_text').fadeIn();
+		} 
+		else {
+			$('#dino_text').fadeOut();
+		} 
+		
+		if ($(this).scrollTop() > 3800) {
+			$('#hell_text').fadeIn();
+		} 
+		else {
+			$('#hell_text').fadeOut();
+		}
+		
+	});
+</script>
+
+</head>
+
+<body>
+<div id="space_text">
+<h1>The Final Frontier</h1>
+</div>
+<div id="heaven_text">
+<h1>Welcome to Heaven</h1>
+</div>
+<div id="sky_text">
+<h1>No Birds?</h1>
+</div>
+<div id="sunset_text">
+<h1>Nice Sunset!</h1>
+</div>
+<div id="dino_text">
+<h1>The dead shall rise!</h1>
+</div>
+<div id="hell_text">
+<h1>WELCOME TO HELL!</h1>
+</div>
+<div id="mountain"></div>
+<div id="content"></div>
+<script type="text/javascript">// <![CDATA[
+$(function() {
+
+     $.scrollingParallax('images/moon.png', {
+        staticSpeed : .17,
+        loopIt : false,
+		staticScrollLimit : false,
+		bgWidth : '453px',
+		bgHeight : '435px',
+        disableIE6Animation : false
+    });
+	
+	$.scrollingParallax('images/aliens.png', {
+        staticSpeed : .35,
+        loopIt : false,
+		staticScrollLimit : false,
+        bgWidth : '344px',
+		bgHeight : '193px',
+        disableIE6Animation : false
+    });
+	
+	$.scrollingParallax('images/stars1.png', {
+        staticSpeed : .8,
+        loopIt : false,
+        staticScrollLimit : false,
+        bgWidth : '1814px',
+        disableIE6 : true
+    });
+    
+    $.scrollingParallax('images/stars2.png', {
+        staticSpeed : 1.2,
+        loopIt : false,
+		staticScrollLimit : false,
+        bgWidth : '1814px',
+        disableIE6 : true
+    });
+	
+	
+	
+	$.scrollingParallax('images/clouds1.png', {
+        staticSpeed : 1.2,
+        loopIt : false,
+		staticScrollLimit : false,
+        bgWidth : '1726px',
+		bgHeight : '687px',
+        disableIE6 : true
+    });
+	
+	$.scrollingParallax('images/clouds2.png', {
+        staticSpeed : 1.4,
+        loopIt : false,
+		staticScrollLimit : false,
+        bgWidth : '1236px',
+		bgHeight : '547px',
+        disableIE6 : true
+    });
+	
+	$.scrollingParallax('images/clouds3.png', {
+        staticSpeed : 1.5,
+        loopIt : false,
+		staticScrollLimit : false,
+        bgWidth : '1120px',
+		bgHeight : '757px',
+        disableIE6 : true
+    });
+	
+	$.scrollingParallax('images/burst.png', {
+        staticSpeed : .7,
+        loopIt : false,
+		staticScrollLimit : false,
+        bgWidth : '1920px',
+		bgHeight : '1473px',
+        disableIE6 : true
+    });
+	
+	$.scrollingParallax('images/dino1.png', {
+        staticSpeed : .5,
+        loopIt : false,
+		staticScrollLimit : false,
+        bgWidth : '552px',
+		bgHeight : '380px',
+        disableIE6 : true
+    });
+	
+	$.scrollingParallax('images/dino2.png', {
+        staticSpeed : .4,
+        loopIt : false,
+		staticScrollLimit : false,
+        bgWidth : '398px',
+		bgHeight : '227px',
+        disableIE6 : true
+    });
+	
+	$.scrollingParallax('images/dino3.png', {
+        staticSpeed : .3,
+        loopIt : false,
+		staticScrollLimit : false,
+        bgWidth : '332px',
+		bgHeight : '130px',
+        disableIE6 : true
+    });
+	
+	$.scrollingParallax('images/dino4.png', {
+        staticSpeed : .2,
+        loopIt : false,
+		staticScrollLimit : false,
+        bgWidth : '266px',
+		bgHeight : '143px',
+        disableIE6 : true
+    });
+    
+   $.scrollingParallax('images/hell.png', {
+        staticSpeed : 1.5,
+        loopIt : false,
+		staticScrollLimit : false,
+        bgWidth : '1920px',
+		bgHeight : '1028px',
+        disableIE6 : true
+    });
+	 
+    
+});
+$(document).ready(function(){
+$("img[src='images/aliens.png']").css({"margin-top":"550px","position":"absolute"});
+$("img[src='images/moon.png']").css({"margin-left":"550px","position":"absolute"});
+$("img[src='images/clouds1.png']").css({"margin-top":"2650px","position":"fixed center"});
+$("img[src='images/clouds2.png']").css({"margin-top":"1950px","position":"fixed center"});
+$("img[src='images/clouds3.png']").css({"margin-top":"1250px","position":"fixed center"});
+$("img[src='images/burst.png']").css({"margin-top":"1150px","position":"fixed center"});
+$("img[src='images/dino4.png']").css({"margin-top":"4200px","margin-left":"0px","position":"absolute","z-index":"8"});
+$("img[src='images/dino3.png']").css({"margin-top":"4500px","margin-left":"550px","position":"absolute","z-index":"8"});
+$("img[src='images/dino2.png']").css({"margin-top":"5200px","margin-left":"0px","position":"absolute","z-index":"8"});
+$("img[src='images/dino1.png']").css({"margin-top":"5400px","margin-left":"550px","position":"absolute","z-index":"8"});
+$("img[src='images/hell.png']").css({"margin-top":"6200px"});
+
+});
+// ]]></script>
+</body>
+</html>
